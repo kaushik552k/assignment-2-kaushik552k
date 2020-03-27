@@ -75,4 +75,13 @@ public class MyBinarySearchTree {
         showTreeData( node.getRightNode() );
     }
 
+    public void addElementToList(TreeNode node){
+        if(node == null)
+            return;
+        arrayList.add( node.getData() );
+        addElementToList( node.getLeftNode() );
+        addElementToList( node.getRightNode() );
+    }
+
+
 }
