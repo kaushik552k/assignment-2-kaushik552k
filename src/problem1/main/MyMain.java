@@ -22,7 +22,9 @@ public class MyMain {
             System.out.println( "Enter the data" );
             int val = sc.nextInt();
             TreeNode node = new TreeNode();
-
+            node.setData( val );
+            bst.insert( node );
         }
+        System.out.println( bst.showLeft( bst.getRoot(), false ) );
     }
 }
